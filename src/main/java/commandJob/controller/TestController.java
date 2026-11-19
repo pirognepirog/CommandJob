@@ -16,6 +16,7 @@ public class TestController {
         this.recommendationsRepository = recommendationsRepository;
     }
 
+    // тест контроллер для урока
     @GetMapping("/test-amount")
     public int testAmount(@RequestParam UUID userId) {
         return recommendationsRepository.getRandomTransactionAmount(userId);
