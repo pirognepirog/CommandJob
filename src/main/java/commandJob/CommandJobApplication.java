@@ -7,9 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.jdbc.core.JdbcTemplate;
 
-@SpringBootApplication(exclude = {
-        org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration.class
-})
+@SpringBootApplication
 public class CommandJobApplication {
     public static void main(String[] args) {
         SpringApplication.run(CommandJobApplication.class, args);
